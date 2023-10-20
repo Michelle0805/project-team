@@ -1,0 +1,51 @@
+
+.hero{
+    padding: 0 20px;
+    background-color: black;
+}
+
+.hero__container{
+    padding-top: 69px;
+}
+
+.hero__txt h1{
+    color: #FFF;
+    font-family: Epilogue;
+    font-size: 38px;
+    font-style: normnal;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -1.52px;
+}
+
+.hero__background__container{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.hero__backgrnd__txt{
+    margin-left: 87px;
+    width: 248px;
+}
+
+.hero__backgrnd__txt p{
+    color: #FFF;
+    font-family: Epilogue;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+}
+
+.hero__img{
+    padding: 40 0px;
+}
+.hero__img img{
+    width: 335px;
+    height: 410px;
+    object-fit: cover;
+}
