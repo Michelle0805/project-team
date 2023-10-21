@@ -49,3 +49,27 @@
     height: 410px;
     object-fit: cover;
 }
+
+
+// tablet view
+
+@media screen and (min-width: 768px) {
+    .hero{
+        margin: 0 auto;
+        padding: 0 32px;
+    }
+
+    .hero__txt h1{
+        color: #FFF;
+        font-family: Epilogue;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 62px;
+        letter-spacing: -2.4px;
+    }
+    .hero__img img{
+        width: 704px;
+        height: 410px;
+    }
+}
