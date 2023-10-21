@@ -14,6 +14,9 @@
     margin-bottom: 40px;
     padding-left: 20px;
 }
+.catalog-list {
+    display: block;
+}
 .watch-product-name {
     overflow: hidden;
     color: var(--black, #141414);
@@ -38,11 +41,28 @@
     align-items: center;
 }
 .watch-price {
-color: rgba(20, 20, 20, 0.50);
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 1.16667em; 
-letter-spacing: -0.24px;
+    color: rgba(20, 20, 20, 0.50);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.16667em; 
+    letter-spacing: -0.24px;
 }
-    
+
+@media screen and (min-width:768px) {
+    .container {
+        max-width: 768px;
+    }
+.catalog-list {
+    // width: calc((100% / 2 ) - 32px) ;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 32px;
+}
+.header-text-catalog {
+    font-size: 40px;
+    line-height: 1.10em;
+    letter-spacing: -0.8px;
+}
+}
