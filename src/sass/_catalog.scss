@@ -66,3 +66,17 @@
     letter-spacing: -0.8px;
 }
 }
+
+@media screen and (min-width: 1280px) {
+.container {
+    max-width: 1280px; 
+}
+.catalog-list {
+    display: flex;
+}
+
+
+
+
+
+}
