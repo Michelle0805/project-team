@@ -1,12 +1,48 @@
 .catalog {
-    padding: 80px 132px;
+    padding-top: 80px;
+}
+.catalog-container {
+    padding: 0 20px;
 }
 .header-text-catalog {
     color: var(--dark-green, #1E2827);
-    font-family: Epilogue;
-    font-size: 40px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 600;
-    line-height: 1.10em;
-    letter-spacing: -0.8px;
+    line-height: 1.25em;
+    letter-spacing: -0.64px;
+    margin-bottom: 40px;
+    padding-left: 20px;
 }
+.watch-product-name {
+    overflow: hidden;
+    color: var(--black, #141414);
+    text-overflow: ellipsis;
+
+    font-family: Epilogue;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.28571em;
+    letter-spacing: -0.28px;
+    margin-top: 14px;
+
+}
+.watches {
+    display: flex;
+    width: 335px;
+    height: 360px;
+    padding: 43px 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.watch-price {
+color: rgba(20, 20, 20, 0.50);
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.16667em; 
+letter-spacing: -0.24px;
+}
+    
