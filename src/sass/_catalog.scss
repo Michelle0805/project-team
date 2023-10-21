@@ -1,0 +1,413 @@
+:root {
+  --white: #FFF;
+  --black:#141414;
+  --darkgreen:#1E2827;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Epilogue";
+  // background-color: rgba(255,255,255,0);
+  // color: var(--white);
+}
+
+.catalog {
+    padding-top: 80px;
+}
+.catalog-container {
+    padding: 0 20px;
+}
+.header-text-catalog {
+    color: var(--dark-green, #1E2827);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.25em;
+    letter-spacing: -0.64px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+}
+.watch-product-name {
+  overflow: hidden;
+  color: var(--black, #141414);
+  text-overflow: ellipsis;
+
+  font-family: Epilogue;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.28571em;
+  letter-spacing: -0.28px;
+  margin-top: 14px;
+
+}
+.watches {
+  display: flex;
+  width: 335px;
+  height: 360px;
+  padding: 43px 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.watch-price {
+  color: rgba(20, 20, 20, 0.50);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.16667em; 
+  letter-spacing: -0.24px;
+}
+
+/* Start of Cyfred */
+
+/* Test Change*/
+
+.catalog-buy-button{
+  display: inline-flex;
+  padding: 14px 28px;
+  align-items: flex-start;
+  gap: 10px;
+  position: absolute;
+  right: 20px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+
+  border-radius: 8px;
+  background: var(--darkgreen, #1E2827);
+
+  color: var(--white, #FFF);
+  text-align: center;
+  font-family: Epilogue;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.16667em; /* 116.667% */
+  text-transform: uppercase;
+
+}
+
+.modal 
+{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px; 
+  pointer-events: auto;
+  opacity: 1; /* visible */
+  /* transition: visibility var(--transition-duration) ; */
+  transition-property: visibility, opacity;
+  transition-duration: var(--transition-duration);
+  transform: none;
+  
+  
+  box-shadow: 0px 0px 8.77546px 0px rgba(0, 0, 0, 0.01),
+              0px 0px 18.17037px 0px rgba(0, 0, 0, 0.02), 
+              0px 0px 36.2375px 0px rgba(0, 0, 0, 0.03), 
+              0px 0px 71.02963px 0px rgba(0, 0, 0, 0.03), 
+              0px 0px 130.59953px 0px rgba(0, 0, 0, 0.04), 
+              0px 0px 223px 0px rgba(0, 0, 0, 0.05);
+
+  // background: black;
+
+}
+
+
+.modal.is-hidden{
+  visibility: hidden;
+  opacity: 0; /* if hidden*/
+  pointer-events: none;
+}
+
+.modal.is-hidden .modal-content{
+  transform: translateY(-20px) cubic-bezier(0.4, 0, 0.2, 1);;
+  transform: scale(0.5) cubic-bezier(0.4, 0, 0.2, 1);;
+}
+
+.modal-content{
+  position: relative;
+  width: 408px;
+  /* height: 584px; */
+  padding: 24px;
+  border-radius: 4px;
+  background: var(--white, #FFF);
+  box-shadow: 0px 0px 8.77546px 0px rgba(0, 0, 0, 0.01), 
+              0px 0px 18.17037px 0px rgba(0, 0, 0, 0.02), 
+              0px 0px 36.2375px 0px rgba(0, 0, 0, 0.03), 
+              0px 0px 71.02963px 0px rgba(0, 0, 0, 0.03), 
+              0px 0px 130.59953px 0px rgba(0, 0, 0, 0.04), 
+              0px 0px 223px 0px rgba(0, 0, 0, 0.05);
+
+  // box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 
+  //             0px 1px 3px 0px rgba(0, 0, 0, 0.12), 
+  //             0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  
+  transform: none;
+  transition: transform var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.watch-buy-container {
+  display: flex;
+  width: 276px;
+  height: 325px;
+  padding: 26px 0px 25px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-close {
+  display: block;
+  background-color: var(--cornflower);
+  width: 24px;
+  height: 24px; 
+  top: 0px;
+  margin-left: auto;
+  color: var(--navy-blue);
+  border-radius: 50%;
+  border: 1px solid rgb(142, 143, 153, 0.5);
+
+  cursor: pointer;
+  
+  transition: color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1),
+  border-color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1),
+  fill var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-icon{
+  stroke: rgba(0, 0, 0, 0.10);
+  width: 8px;
+  height: 8px;
+
+  transform: stroke var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+
+  
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  background-color: var(--ocean);
+  border-color: var(--ocean);
+  color: var(--cloud);
+  stroke-width: 1px;
+  border-color: transparent;
+  fill: var(--white);
+
+  transition: background-color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1),
+  border-color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1),
+  fill var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-title{
+  margin-top: 24px;
+  margin-bottom: 34px;
+  text-align: center;
+
+  color: var(--navy-blue);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5em; /* 150% */
+  letter-spacing: 0.32px;
+
+}
+
+/* Modal Form */
+.user-contact {
+  margin-top: 12px;
+}
+
+.user-contact-field {
+  margin-top: 16px;
+  display: block;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.user-contact-label {
+  position: absolute; 
+  bottom: calc(100% + 4px);
+  font-size: 12px;
+  color: var(--light-slate);
+  font-weight: 400;
+  line-height: 14px; 
+  /* 116.667% */
+  letter-spacing: 0.48px;
+}
+
+.user-contact input,
+.user-contact textarea
+{
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  padding: 11px 12px;
+  border-radius: 4px;
+  border: 1px solid rgba(33,33,33,0.2);
+  /* var(--navy-blue-modal); */
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 116.667% */
+  letter-spacing: 0.48px;
+  color: var(--navy-blue);
+  
+}
+
+.user-contact input{
+  padding-left: 42px;
+}
+
+.user-contact textarea{
+  resize: none;
+  width: 100%;
+  height: 150px;
+  padding-left: 16px;
+}
+
+.user-contact input:focus,
+.user-contact textarea:focus,
+.user-contact input:hover,
+.user-contact textarea:hover  
+{
+  border-color: var(--iris);
+  outline: 0;
+  transition: border-color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* stroke: var(--white); */
+
+}
+
+/* .user-contact input:focus + svg,
+.user-contact input:hover + svg */
+.user-contact-input:focus + .user-contact-field-icon, 
+.user-contact-input:hover + .user-contact-field-icon
+{
+  fill: var(--iris);
+  stroke: var(--white);
+  transition: fill var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+label.user-contact-checkbox{
+  display: flex;
+  /* padding: 0 12px; */
+  color: var(--white);
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  stroke-width: 1px;
+  stroke: var(--navy-blue-modal);
+  padding-bottom: 0;
+
+}
+
+.user-contact-agree-text {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 116.667% */
+  letter-spacing: 0.48px;
+  color: var(--light-slate);
+}
+
+.form-terms{
+  color: var(--iris);
+  text-decoration: underline;
+}
+
+.user-contact-checkbox input{
+  width: 16px;
+  width: 16px;
+  appearance: none;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.user-contact-range input{
+  width: 100%;
+}
+
+
+.user-contact-field-icon{
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 12px;
+  top: 40%;
+  transform: translateY(-50%);
+
+}
+
+.user-contact-field-checkmark{
+  
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--navy-blue-modal);;
+  stroke-width: 1px;
+
+  background-color: var(--white);
+  stroke: var(--white);
+  fill: var(--white);
+  border-radius: 2px;
+  margin-right: 8px;
+
+}
+
+.user-contact-checkbox input:checked + svg {
+  border: 0;
+  background-color: var(--ocean);
+  border-color: var(--ocean);
+
+  fill: var(--white);
+  stroke: var(--white);
+
+}
+
+.user-contact-submit{
+  display: flex;
+
+  padding: 10px 80px;
+  color: white;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+  border: 0;
+  margin-top: 12px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-radius: 4px;
+  background: var(--iris);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
