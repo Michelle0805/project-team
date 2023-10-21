@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Epilogue';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.gstatic.com/s/epilogue/v3/ke8kO743IFjHK4W0BGDr9ZlbI10.woff2') format('woff2');
+}
+:root {
+  --black: #141414;
+  --dark-green: #1E2827;
+  --white: #FFF;
+  --grey: #C6CDD1;
+}
 .footer {
   background: var(--dark-green);
   padding: 40px 20px 20px;
