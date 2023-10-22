@@ -37,10 +37,8 @@
   }
   
   .aboutus-header {
-    color: var(--dark-green, #1E2827);
-    font-family: Epilogue;
+    color: var(--dark-green);
     font-size: 32px;
-    font-style: normal;
     font-weight: 600;
     line-height: 40px; 
     letter-spacing: -0.64px;
@@ -71,23 +69,36 @@
   }
   
   .aboutus-description-item {
-  color: var(--black, #141414);
-  font-family: Epilogue;
+  color: var(--black);
   font-size: 14px;
-  font-style: normal;
   font-weight: 300;
   line-height: 18px;
   letter-spacing: -0.28px;
   }
   
-  .aboutus-gif {
+  .aboutus-gif-container {
     
-    align-items: justify;
-    align-content: center;
-    justify-content: center;
-    padding-top: 40px;
+    display: block;
+    padding: 40px 20px;
+    
+    @media screen and (min-width: 768px)
+    {
+      
+    }
+  
+    @media screen and (min-width: 1280px)
+    {
+  
+      padding: 40px 132px 0 415px;
+      
+    }
+  }
+
+  .aboutus-gif-container-img {
+    display: block;
     height: 365px;
     width: 100%;
+    object-fit: cover;
   
   
     @media screen and (min-width: 768px)
@@ -100,10 +111,8 @@
   
     @media screen and (min-width: 1280px)
     {
-      
+
       height: 500px;
-      align-items: flex-end;
-      justify-content: flex-end;
     }
   }
   
