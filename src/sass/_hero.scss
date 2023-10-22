@@ -41,6 +41,12 @@
     letter-spacing: -0.28px;
 }
 
+.swiper-slide img{
+    width: 266px;
+    height: 200px;
+    object-fit: cover;
+}
+
 .hero__img{
     padding: 40 0px;
 }
@@ -48,4 +54,50 @@
     width: 335px;
     height: 410px;
     object-fit: cover;
+}
+
+
+// tablet view
+
+@media screen and (min-width: 768px) {
+    .hero{
+        margin: 0 auto;
+        padding: 0 32px;
+    }
+
+    .hero__backgrnd__txt{
+        margin-left: 0;
+    }
+
+    .hero__txt h1{
+        color: #FFF;
+        font-family: Epilogue;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 62px;
+        letter-spacing: -2.4px;
+    }
+    .hero__img img{
+        width: 704px;
+        height: 410px;
+    }
+
+    .swiper-slide img{
+        width: unset;
+        height: unset;
+    }
+
+    .hero__background__container {
+        padding-top: 60px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .hero__img{
+        padding: 100px 0 64px 0;
+    }
 }
