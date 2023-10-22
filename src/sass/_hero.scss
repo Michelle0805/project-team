@@ -41,6 +41,12 @@
     letter-spacing: -0.28px;
 }
 
+.swiper-slide img{
+    width: 266px;
+    height: 200px;
+    object-fit: cover;
+}
+
 .hero__img{
     padding: 40 0px;
 }
@@ -59,6 +65,10 @@
         padding: 0 32px;
     }
 
+    .hero__backgrnd__txt{
+        margin-left: 0;
+    }
+
     .hero__txt h1{
         color: #FFF;
         font-family: Epilogue;
@@ -71,5 +81,23 @@
     .hero__img img{
         width: 704px;
         height: 410px;
+    }
+
+    .swiper-slide img{
+        width: unset;
+        height: unset;
+    }
+
+    .hero__background__container {
+        padding-top: 60px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .hero__img{
+        padding: 100px 0 64px 0;
     }
 }
