@@ -4,7 +4,7 @@
             <ul class="catalog-list list">
                 <li class="catalog-list-item">
                     <img class="watches" srcset="/src/images/watch1-tube.jpg" alt="watch1">
-                    <h3 class="watch-product-name"> Tube Watch S42 Date Steel With Black... </h3>
+                    <h3 class="watch-product-name"> Tube Watch S42 Date Steel With Black Case </h3>
                     <p class="watch-price"> €395 </p>
                 </li>
                 <li class="catalog-list-item">
@@ -14,7 +14,7 @@
                 </li>
                 <li class="catalog-list-item">
                     <img class="watches" srcset="/src/images/watch3-diver.jpg" alt="watch3">
-                    <h3 class="watch-product-name">Diver  300M Co‑Axial Master Chronometer... </h3>
+                    <h3 class="watch-product-name">Diver  300M Co‑Axial Master Chronometer Chronograph</h3>
                     <p class="watch-price"> €600 </p>
                 </li>
                 <li class="catalog-list-item">
@@ -34,7 +34,7 @@
             </li>
             <li class="catalog-list-item">
                 <img class="watches" srcset="/src/images/watch7-diver.jpg" alt="watch7">
-                <h3 class="watch-product-name"> Diver 300M Co-Axial Master... </h3>
+                <h3 class="watch-product-name"> Diver 300M Co-Axial Master Chronometer </h3>
                 <p class="watch-price"> €1200</p>
             </li>
             <li class="catalog-list-item">
@@ -42,103 +42,83 @@
                 <h3 class="watch-product-name"> Greenlane Watch By Police For Men </h3>
                 <p class="watch-price"> €1000 </p>
             </li>
-            <li class="catalog-list-item">
+            <li class="catalog-list-item d-none">
                 <img class="watches" srcset="/src/images/watch9-squardrc.jpg" alt="watch9">
                 <h3 class="watch-product-name"> Squardrc 5402 Chrono </h3>
                 <p class="watch-price"> €359 </p>
             </li>
-            <li class="catalog-list-item">
+            <li class="catalog-list-item d-none">
                 <img class="watches" srcset="/src/images/watch10-diver.jpg" alt="watch10">
-                <h3 class="watch-product-name"> Diver  300M Co‑Axial Master</h3>
+                <h3 class="watch-product-name" > Diver  300M Co‑Axial Master</h3>
                 <p class="watch-price"> €400 </p>
             </li>
-            <li class="catalog-list-item">
+            <li class="catalog-list-item d-none">
                 <img class="watches" srcset="/src/images/watch11-citizen.jpg" alt="watch11">
                 <h3 class="watch-product-name"> Citizen </h3>
                 <p class="watch-price"> €519 </p>
             </li>
-            <li class="catalog-list-item">
+            <li class="catalog-list-item d-none">
                 <img class="watches" srcset="/src/images/watch12-armani.jpg" alt="watch12">
                 <h3 class="watch-product-name"> Armani Exchange </h3>
                 <p class="watch-price"> €400 </p>
             </li>
         </ul>
     </div>
+
+    <!-- cyfred -->
+
     <div class="container buy-container">
-        <button class="catalog-buy-button" type="button" data-modal-open>Buy Me</button>    
+        <button class="catalog-buy-button" type="button" data-modal-open>BUY NOW</button>
     </div>
     <div class="modal is-hidden" data-modal>
         <div class="modal-content">
-
-          <button type="button" class="modal-close" data-modal-close>
+            <button type="button" class="modal-close" data-modal-close>
             <svg class="modal-close-icon" width="8" height="8">
-              <use href="/src/images/icon.svg#icon-close"></use>
+                <use href="/src/images/icon.svg#icon-close"></use>
             </svg>
-          </button>
-
-          <div class="container watch-buy-container">
-            <img class="watch-buy" srcset="/src/images/watch-buynow.jpg" alt="watch-buynow">  
-          </div>
-          <h3 class="watch-product-name"> Tube Watch S42 Date Steel With Black Case </h3>
-          <p class="watch-price"> €395 </p>
-
-          <form class="user-contact">
-  
-            <label class = "user-contact-field">
-              <span class = "user-contact-label">Name</span>
-              <input class = "user-contact-input" type="text" name="full_name" required>
-              <svg class="user-contact-field-icon">
-                <use href="/src/images/icon.svg#icon-name"></use>
-              </svg>
-            </label>
-  
-            <label class="user-contact-field">
-              <span class="user-contact-label">Phone</span>
-              <input class = "user-contact-input" 
-                type="tel" name="user-phone" required />
-              <svg class="user-contact-field-icon">
-                <use href="/src/images/icon.svg#icon-phone"></use>
-              </svg>
-            </label>
-  
-            <label class="user-contact-field">
-              <span class="user-contact-label">Email</span>
-              <input class = "user-contact-input" 
-                type="email" name="user-email" required />
-              <svg class="user-contact-field-icon">
-                <use href="/src/images/icon.svg#icon-email"></use>
-              </svg>
-            </label>
-             
-            <label class="user-contact-field user-contact-comment">
-              <span class="user-contact-label">Comments</span>
-              <textarea
-                class="user-contact-textarea"
-                name="user-feedback"
-                rows="8"
-                placeholder="Text input"
-              ></textarea>
-            </label>
-  
-            <label class="user-contact-field user-contact-checkbox">
-              <input
-                class="user-contact-input-checkbox"
-                type="checkbox"
-                name="user-terms"
-               
-              />
-              <svg class="user-contact-field-checkmark" width="16" height="16">
-                <use href="/src/images/icon.svg#icon-checkbox"></use>
-              </svg>
-              <span class="user-contact-agree-text"
-                >I accept the terms and conditions of the
+            </button>
+            <img class="watch-buy" srcset="/src/images/watch-buynow.jpg" alt="watch-buynow">
+            <h3 class="watch-product-name"> Tube Watch S42 Date Steel With Black Case </h3>
+            <p class="watch-price"> €395 </p>
+            <form class="buynow-form">
+                <label class = "buynow-form-field">
+                <span class = "buynow-form-label">Full name</span>
+                <input class = "buynow-form-input"
+                        type= "text" name="full-name" required
+                        placeholder="Enter your fullname"
+                        >
+                </label>
+                <label class="buynow-form-field">
+                <span class="buynow-form-label">Enter your email</span>
+                <input class = "buynow-form-input"
+                    type="email" name="user-email" required
+                    placeholder="Enter your email"
+                    >
+                </label>
+                <label class = "buynow-form-field">
+                <span class = "buynow-form-label">Enter card</span>
+                <input class = "buynow-form-input"
+                        type= "text" name="card-number" required
+                        placeholder="Enter card">
+                </label>
+                <label class="buynow-form-field buynow-form-comment">
+                <span class="buynow-form-label">Comments</span>
+                <textarea
+                    class="buynow-form-textarea"
+                    name="user-feedback"
+                    rows="8"
+                    placeholder="Enter your text"
+                ></textarea>
+                </label>
+                <button class="buynow-form-submit" type="submit">SUBMIT</button>
+                <span class="buynow-form-agree-text"
+                >By clicking on “Submit” button, you agree to our
                 <a class="form-terms" href="">Privacy Policy</a>
-              </span>
-            </label>
-  
-            <button class="user-contact-submit" type="submit">Send</button>
-          </form>
-
+                , and allow Promodo to use this
+                information for marketing purposes.
+                </span>
+            </form>
         </div>
-      </div>
+    </div>
+
 </section>
