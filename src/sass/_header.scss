@@ -1,39 +1,5 @@
-:root {
-    --white: #FFF;
-    --black: #141414;
-    --darkgreen: #1E2827;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: var(--white);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: "Epilogue";
-    color: var(--white);
-}
-
-.container {
+.header {
     background-color: var(--black);
-    padding-right: 132px;
-    padding-left: 132px;
-    justify-content: center;
-    align-items: center;
 }
 
 .main-header {
@@ -47,7 +13,13 @@ body {
 }
 
 .header-nav {
+    width: 464px;
+    height: 48px;
+    flex-shrink: 0;
     color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-nav-logo {
@@ -59,15 +31,14 @@ body {
     letter-spacing: -0.45px;
 }
 
-.header-nav-link {
-    margin-right: 80px;
-}
 
-.logo {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    margin-left: 100;
+.logo-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19px;
+    height: 19px;
+    margin-right: 80px;
 }
 
 .logo-text {
@@ -98,5 +69,25 @@ body {
     padding: 18px 35px 18px 36px;
     font-style: normal;
     line-height: 12px;
+    display: flex;
+    justify-content: end;
+}
+
+
+
+@media screen and (min-width:320px) and (max-width: 767px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width: 767px),
+only screen and (max-width:427px) {
+
+    .address,
+    .nav-list {
+        display: none;
+    }
 }
 
