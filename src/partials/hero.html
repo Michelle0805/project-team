@@ -11,7 +11,7 @@
           <div class="swiper-slide">
             <img src="/src/images/asset-1.jpg" alt="#" />
           </div>
-          <!-- <div class="swiper-slide">
+          <div class="swiper-slide">
             <img src="/src/images/asset-2.jpg" alt="#" />
           </div>
           <div class="swiper-slide">
@@ -22,11 +22,54 @@
           </div>
           <div class="swiper-slide">
             <img src="/src/images/asset-5.jpg" alt="#" />
-          </div> -->
+          </div>
         </div>
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-buttons">
+          <div class="swiper-button-prev">
+            <ul class="swiper-button-list">
+              <li class="swiper-button-item">
+                <button type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M15 18L9 12L15 6"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="swiper-button-next">
+            <ul class="swiper-button-list">
+              <li class="swiper-button-item">
+                <button type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M9 18L15 12L9 6"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="hero__backgrnd__txt">
         <p>
@@ -41,4 +84,21 @@
     </div>
   </div>
 </section>
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script src="
+https://cdn.jsdelivr.net/npm/swiper@10.3/swiper-bundle.min.js
+"></script>
+
+<script>
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
