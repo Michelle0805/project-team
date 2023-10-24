@@ -8,7 +8,7 @@
       <h1>Welcome to our collection of premium watches</h1>
     </div>
     <div class="hero__background__container">
-      <div class="swiper">
+      <div class="swiper swiper__container">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
@@ -97,13 +97,12 @@
     </div>
   </div>
 </section>
-
 <script src="
 https://cdn.jsdelivr.net/npm/swiper@10.3/swiper-bundle.min.js
 "></script>
 
 <script>
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.swiper__container', {
     // Optional parameters
     slidesPerView: 1,
     spaceBetween: 10,
