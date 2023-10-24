@@ -21,13 +21,25 @@
                     <img class="watches" srcset="/src/images/watch4-diver.jpg" alt="watch4">
                     <h3 class="watch-product-name"> Diver 300M Co-Axial Master Chronometer </h3>
                     <p class="watch-price"> €1400 </p>
-            </li>
-            <li class="catalog-list-item">
-                <img class="watches" srcset="/src/images/watch5-taman.jpg" alt="watch5">
-                <h3 class="watch-product-name"> Taman Watch By Police For Men</h3>
-                <p class="watch-price"> €500 </p>
-            </li>
-            <li class="catalog-list-item">
+                </li>
+                <li class="catalog-list-item">
+                <div class="watches-container-icon-heart">
+                    <a href="#" class="watch-heart-icon-link d-none1">
+                    <svg width="24" height="24">
+                        <use href="/src/images/icon.svg#heart"></use>
+                    </svg>
+                    </a>
+                    <img class="watches" srcset="/src/images/watch5-taman.jpg" alt="watch5">
+                </div>
+                    <h3 class="watch-product-name"> Taman Watch By Police For Men</h3>
+                    <p class="watch-price"> €500 </p>
+                </li>
+                <li class="catalog-list-item">
+                <a href="#" class="watch-heart-icon-link d-none1">
+                    <svg width="24" height="24">
+                        <use href="/src/images/icon.svg#heart"></use>
+                    </svg>
+                </a>
                 <img class="watches" srcset="/src/images/watch6-malawi.jpg" alt="watch6">
                 <h3 class="watch-product-name"> Malawi Watch Police For Men </h3>
                 <p class="watch-price"> €555 </p>
@@ -65,60 +77,64 @@
         </ul>
     </div>
 
-    <!-- cyfred -->
-
-    <div class="container buy-container">
-        <button class="catalog-buy-button" type="button" data-modal-open>BUY NOW</button>
-    </div>
-    <div class="modal is-hidden" data-modal>
-        <div class="modal-content">
-            <button type="button" class="modal-close" data-modal-close>
-            <svg class="modal-close-icon" width="8" height="8">
-                <use href="/src/images/icon.svg#icon-close"></use>
-            </svg>
-            </button>
-            <img class="watch-buy" srcset="/src/images/watch-buynow.jpg" alt="watch-buynow">
-            <h3 class="watch-product-name"> Tube Watch S42 Date Steel With Black Case </h3>
-            <p class="watch-price"> €395 </p>
-            <form class="buynow-form">
-                <label class = "buynow-form-field">
-                <span class = "buynow-form-label">Full name</span>
-                <input class = "buynow-form-input"
-                        type= "text" name="full-name" required
-                        placeholder="Enter your fullname"
-                        >
-                </label>
-                <label class="buynow-form-field">
-                <span class="buynow-form-label">Enter your email</span>
-                <input class = "buynow-form-input"
-                    type="email" name="user-email" required
-                    placeholder="Enter your email"
+<!-- cyfred -->
+<div class="container buy-container">
+    <button class="catalog-buy-button" type="button" data-modal-open>BUY NOW</button>
+</div>
+<div class="modal is-hidden container" data-modal>
+    <div class="modal-content">
+      <!-- <div class= "modal-content-close-container"> -->
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="modal-close-icon" width="54" height="54">
+              <use href="/src/images/icon.svg#icon-close"></use>
+          </svg>
+        </button>
+      <!-- </div> -->
+      <div class="modal-image-container">
+        <img class="watch-buy" srcset="/src/images/watch-buynow.jpg" alt="watch-buynow">
+        <h3 class="watch-product-name"> Tube Watch S42 Date Steel With Black Case </h3>
+        <p class="watch-price"> €395 </p>
+      </div>
+      <div class= "buynow-form-container">
+          <form class="buynow-form">
+              <label class = "buynow-form-field">
+              <span class = "buynow-form-label">Full name</span>
+              <input class = "buynow-form-input"
+                      type= "text" name="full-name" required
+                      placeholder="Enter your full name"
                     >
-                </label>
-                <label class = "buynow-form-field">
-                <span class = "buynow-form-label">Enter card</span>
-                <input class = "buynow-form-input"
-                        type= "text" name="card-number" required
-                        placeholder="Enter card">
-                </label>
-                <label class="buynow-form-field buynow-form-comment">
-                <span class="buynow-form-label">Comments</span>
-                <textarea
-                    class="buynow-form-textarea"
-                    name="user-feedback"
-                    rows="8"
-                    placeholder="Enter your text"
-                ></textarea>
-                </label>
-                <button class="buynow-form-submit" type="submit">SUBMIT</button>
-                <span class="buynow-form-agree-text"
-                >By clicking on “Submit” button, you agree to our
-                <a class="form-terms" href="">Privacy Policy</a>
-                , and allow Promodo to use this
-                information for marketing purposes.
-                </span>
-            </form>
+              </label>
+              <label class="buynow-form-field">
+              <span class="buynow-form-label">Enter your email</span>
+              <input class = "buynow-form-input"
+                  type="email" name="user-email" required
+                  placeholder="Enter your email"
+                  >
+              </label>
+              <label class = "buynow-form-field">
+              <span class = "buynow-form-label">Enter card</span>
+              <input class = "buynow-form-input"
+                      type= "text" name="card-number" required
+                      placeholder="Enter card">
+              </label>
+              <label class="buynow-form-field buynow-form-comment">
+              <span class="buynow-form-label">Comments</span>
+              <textarea
+                  class="buynow-form-textarea"
+                  name="user-feedback"
+                  rows="8"
+                  placeholder="Enter your text"
+              ></textarea>
+              </label>
+              <button class="buynow-form-submit" type="submit">SUBMIT</button>
+              <span class="buynow-form-agree-text"
+              >By clicking on “Submit” button, you agree to our
+              <a class="form-terms" href="">Privacy Policy</a>
+              , and allow Promodo to use this
+              information for marketing purposes.
+              </span>
+          </form>
         </div>
     </div>
-
+</div>
 </section>
