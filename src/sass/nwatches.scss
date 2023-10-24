@@ -45,7 +45,7 @@
     background: url(../images/nwatch-bronze.jpg), lightgray 50% / cover no-repeat;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (min-width:320px) and (max-width: 767px){
 
     .new-watches {
         padding: 80px 20px;
