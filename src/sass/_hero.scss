@@ -30,7 +30,7 @@
 }
 
 .hero__backgrnd__txt{
-    margin-left: 87px;
+    margin-left: auto;
     width: 248px;
     padding-top: 40px;
 }
@@ -55,7 +55,7 @@
     padding: 40 0px;
 }
 .hero__img img{
-    width: 335px;
+    width: 100%;
     height: 410px;
     object-fit: cover;
 }
@@ -76,6 +76,9 @@
     width: 32px;
     height: 32px;
     border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .swiper-next:hover,
@@ -194,5 +197,19 @@
         margin-left: unset !important;
     }
 
+
+}
+
+@media screen and (min-width: 1280px) {
+    .hero{
+        margin: 0 auto;
+    }
+
+    .hero__container{
+        padding: 0 132px;
+    }
+    .hero__txt{
+        width: 750px;
+    }
 
 }
