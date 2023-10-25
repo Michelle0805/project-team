@@ -1,39 +1,5 @@
-:root {
-    --white: #FFF;
-    --black: #141414;
-    --darkgreen: #1E2827;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: var(--white);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: "Epilogue";
-    color: var(--white);
-}
-
-.container {
-    // sbackground-color: var(--black);
-    padding-right: 132px;
-    padding-left: 132px;
-    justify-content: center;
-    align-items: center;
+.header {
+    background-color: var(--black);
 }
 
 .main-header {
