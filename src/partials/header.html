@@ -1,16 +1,16 @@
 <!-- Header Section -->
 <header class="header">
-    <div class="main-header container">
+    <div class="main-header containers">
         <nav class="header-nav">
             <!-- Logo -->
-            <a class="logo-link" href="./">
-                <img src="./images/icon.svg#sw-logo" class="logo" width="19" height=19></img>
+            <div class="logo-container">
+                <img src="./images/icon.svg#sw-logo" class="logo" alt="logo" width="19" height=19></img>
                 <span class="logo-text">thewatchspot</span>
-            </a>
+            </div>
             <ul class="nav-list list">
                 <!-- navigation -->
                 <li class="nav-list-item">
-                    <a class="nav-list-item-link-active link" href="./">about us</a>
+                    <a class="nav-list-item-link link" href="./">about us</a>
                 </li>
                 <li class="nav-list-item">
                     <a class="nav-list-item-link link" href="./">catalog</a>
@@ -25,9 +25,30 @@
             <a class="address-list-item link" href="tel:+380(68)443-94-261">+380 (68) 443-94-26</a>
         </address>
         <!-- Mobile Menu button -->
-        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <!-- <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
             <svg class="burger-icon" width="24" height="24">
                 <use href="./images/icon.svg#burger-menu"></use>
             </svg>
-        </button>
+        </button> -->
+        <!--burger menu modal-->
+        <!-- <div class="hburger-modal is-hidden" id="mobile-menu">
+            <div class="hburger-modal-header">
+                <img src="./images/ws-logo.svg" alt="logo" width="14" height="14">
+                <p class="logo-name">thewatchspot</p>
+                <button class="menu-toggle hburger-close-btn js-close-menu" data-modal-close>
+                    <svg class="hburger-close-svg" width="24" height="24">
+                        <use href="./image/icon.svg#icon-close1"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="container hburger-menu-container">
+                <ul class="hburger-menu-list">
+                    <li class="hburger-menu-list-item"><a class="hburger-item-link" href="aboutus.html">ABOUT US</a></li>
+                    <li class="hburger-menu-list-item"><a class="hburger-item-link" href="catalog.html">CATALOG</a></li>
+                    <li class="hburger-menu-list-item"><a class="hburger-item-link" href="sale.html">SALE</a></li>
+                </ul>
+            </div>
+        </div>
+        <script src="./modal.js"></script>
+        <script src="./mobile-menu.js"></script> -->
 </header>

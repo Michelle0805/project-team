@@ -1,5 +1,10 @@
-.new-watches-container {
-    padding: 80px;
+.new-watches {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-top: 80px;
     background-color: var(--white);
 }
 
@@ -22,6 +27,7 @@
 
 .green-and-bronze-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
 }
 
@@ -39,3 +45,54 @@
     background: url(../images/nwatch-bronze.jpg), lightgray 50% / cover no-repeat;
 }
 
+@media screen and (min-width:320px) and (max-width: 767px){
+
+    .new-watches {
+        padding: 80px 20px;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .new-watches-text {
+        width: 335px;
+        align-items: flex-start;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .green-bronze-header {
+        font-style: normal;
+        font-weight: 600;
+        line-height: 40px;
+        /* 125% */
+        letter-spacing: -0.64px;
+        font-size: 32px;
+        width: 335px;
+        flex-shrink: 0;
+        margin-bottom: 40px;
+    }
+
+    .green-and-bronze-list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nwatches-img1 {
+        content: "";
+        width: 335px;
+        height: 260px;
+        background: url(../images/green-mobile.jpg), lightgray 50% / cover no-repeat;
+    }
+
+    .nwatches-img2 {
+        content: "";
+        width: 100%;
+        height: 260px;
+        background: url(../images/bronze-mobile.jpg), lightgray 50% / cover no-repeat;
+    }
+
+}
