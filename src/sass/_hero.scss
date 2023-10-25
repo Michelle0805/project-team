@@ -92,7 +92,7 @@
 }
 
 .swiper-buttons{
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: flex-end;
     gap: 116px;
@@ -139,8 +139,10 @@
     .hero__backgrnd__txt{
         margin-left: 0;
         position: absolute;
+        padding-top: 0;
+        width: 248px;
         right: 20px;
-        top: 40%;
+        top: 45%;
     }
 
     .hero__txt h1{
@@ -181,8 +183,8 @@
 
     .swiper-next,
     .swiper-prev {
-    width: 40px;
-    height: 40px;
+        width: 40px;
+        height: 40px;
     }
 
     .swiper-next svg,
@@ -193,23 +195,44 @@
 
     .swiper{
         width: 436px;
-        height: 255px;
         margin-left: unset !important;
     }
 
-
+    .swiper__container{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
+// Desktop View
 @media screen and (min-width: 1280px) {
     .hero{
         margin: 0 auto;
     }
 
     .hero__container{
-        padding: 0 132px;
+        padding: 80px 0;
     }
     .hero__txt{
         width: 750px;
+    }
+
+    .hero__background__container {
+        padding-top: 122px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+
+    .hero__img img{
+        width: 676px;
+    }
+
+    .hero__img{
+        padding: 0;
     }
 
 }
