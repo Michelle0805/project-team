@@ -1,17 +1,21 @@
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
 <section class="section hero">
   <div class="container hero__container">
-    <div class="hero__txt">
-      <h1>Welcome to our collection of premium watches</h1>
-    </div>
     <div class="hero__background__container">
-      <div class="swiper">
-        <!-- Additional required wrapper -->
+      <div class="hero__txt">
+        <h1>Welcome to our collection of premium watches</h1>
+      </div>
+      <div class="swiper swiper__container">
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
             <img src="/src/images/asset-1.jpg" alt="#" />
           </div>
-          <!-- <div class="swiper-slide">
+          <div class="swiper-slide">
             <img src="/src/images/asset-2.jpg" alt="#" />
           </div>
           <div class="swiper-slide">
@@ -22,11 +26,59 @@
           </div>
           <div class="swiper-slide">
             <img src="/src/images/asset-5.jpg" alt="#" />
-          </div> -->
+          </div>
         </div>
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+      </div>
+      <div class="swiper-buttons">
+        <ul class="swiper-buttons-list">
+          <li class="swiper-buttons-items">
+            <button class="swiper-prev">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M15 18L9 12L15 6"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </li>
+          <li class="swiper-buttons-items">
+            <button class="swiper-next">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M9 18L15 12L9 6"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </li>
+        </ul>
+        <ul class="counter-list list">
+          <li class="slider-count">01</li>
+          <li class="slider-range">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="2"
+              viewBox="0 0 32 2"
+              fill="none"
+            >
+              <path d="M0 1H32" stroke="white" />
+            </svg>
+          </li>
+          <li class="slider-count">05</li>
+        </ul>
       </div>
       <div class="hero__backgrnd__txt">
         <p>
@@ -35,10 +87,28 @@
           have a watch to suit every taste and occasion.
         </p>
       </div>
-    </div>
-    <div class="hero__img">
-      <img src="/src/images/wrist-watch.jpg" alt="wrist-watch" />
+      <div class="hero__img">
+        <img src="/src/images/wrist-watch.jpg" alt="wrist-watch" />
+      </div>
     </div>
   </div>
 </section>
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="
+https://cdn.jsdelivr.net/npm/swiper@10.3/swiper-bundle.min.js
+"></script>
+
+<script>
+  const swiper = new Swiper('.swiper__container', {
+    // Optional parameters
+    slidesPerView: 1,
+    spaceBetween: 10,
+    direction: 'horizontal',
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-next',
+      prevEl: '.swiper-prev',
+    },
+  });
+</script>
