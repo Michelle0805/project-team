@@ -7,10 +7,6 @@
     background-color: var(--black);
 }
 
-.hero__container{
-    padding-top: 69px;
-}
-
 .hero__txt h1{
     color: #FFF;
     font-family: Epilogue;
@@ -79,6 +75,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 250ms;
 }
 
 .swiper-next:hover,
@@ -89,6 +86,17 @@
 .swiper-next:active,
 .swiper-prev:active{
     border: 1px solid white;
+}
+
+.swiper-next svg:active,
+.swiper-prev svg:active {
+    stroke: white;
+}
+
+.swiper-next svg,
+.swiper-prev svg{
+    width: 18px;
+    stroke: (255, 255, 255, 0.5)
 }
 
 .swiper-buttons{
@@ -142,7 +150,7 @@
         padding-top: 0;
         width: 248px;
         right: 20px;
-        top: 45%;
+        top: 40%;
     }
 
     .hero__txt h1{
@@ -196,6 +204,7 @@
     .swiper{
         width: 436px;
         margin-left: unset !important;
+        margin-right: unset !important;
     }
 
     .swiper__container{
@@ -210,15 +219,13 @@
         margin: 0 auto;
     }
 
-    .hero__container{
-        padding: 80px 0;
-    }
     .hero__txt{
         width: 750px;
+        padding-bottom: 122px;
     }
 
     .hero__background__container {
-        padding-top: 122px;
+        position: relative;
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
@@ -233,6 +240,25 @@
 
     .hero__img{
         padding: 0;
+        position: absolute;
+        left: 47%;
+        top: 35%;
+    }
+
+    .hero__backgrnd__txt{
+        position: absolute;
+        top: 9%;
+        right: 20px;
+        width: 282px;
+
+    }
+
+    .swiper-buttons{
+        padding-bottom: 80px;
+    }
+
+    .swiper{
+        padding-top: 122px;
     }
 
 }
