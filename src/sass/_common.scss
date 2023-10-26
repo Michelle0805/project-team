@@ -8,15 +8,35 @@
   
   :root {
     --dark-green: #1E2827;
+    --black:#141414;
+    --white: #FFF;
   }
   ul {
     list-style-type: none;
   }
+  a {
+    text-decoration: none;
+  }
+  body {
+    font-family: 'epilogue', sans-serif;
+    width: 100%;
+    min-height: 100vh;
+  }
   
+  figure{
+    margin: 0px;
+  }
+  img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    max-inline-size: 100%;
+    max-block-size: 100%;
+  }
   .container {
     max-width: 375px;
     margin: 0 auto;
-    /* padding: 0 15px; */
+    
   
     @media screen and (min-width: 768px) {
       max-width: 768px;
