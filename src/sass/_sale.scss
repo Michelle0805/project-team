@@ -8,7 +8,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* color: var(--white); */
 }
 
 @font-face {
@@ -351,11 +350,6 @@ body {
   letter-spacing: -0.14px;
 }
 
-
-
-
-/*
-    need to apply pseudo element */
 .detail-header {
   display: flex;
   padding: 8px 0px;
