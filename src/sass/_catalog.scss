@@ -37,6 +37,7 @@
 }
 .catalog-list-item:hover figcaption {
   transform: translateY(0);
+  border-bottom: none;
   overflow: hidden !important;
 }
 .catalog-list-item:hover {
@@ -201,7 +202,7 @@ white-space: normal;
       padding: 0;
     }
     .info-list {
-    padding-left: 10px;
+    padding-left: 20px;
     padding-top: 20px;
     }
     .info-paragraph {
@@ -293,6 +294,7 @@ white-space: normal;
   align-items: center;
   width: 335px;
   padding: 40px 24px;
+  margin-top: 150px;
   border-radius: 4px;
   background: var(--white, #FFF);
   box-shadow: 0px 0px 8.77546px 0px rgba(0, 0, 0, 0.01),
@@ -306,6 +308,7 @@ white-space: normal;
 }
 .modal-content-list{
   position: relative;
+  display: block;
 }
 .modal-close-icon{
   stroke: rgba(0, 0, 0, 0.10);
@@ -467,6 +470,7 @@ white-space: normal;
     position: absolute;
     bottom: 0;
     right: 0;
+  
   }
   .modal-content{
     padding: 54px;
