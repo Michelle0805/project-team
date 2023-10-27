@@ -1,26 +1,135 @@
-.new-watches-container {
-    padding: 80px;
-    background-color: var(--white);
+
+.new-watches {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 80px 20px;
+    background-color: var(--white,#FFFF)
 }
 
 .new-watches-text {
     color: rgba(20, 20, 20, 0.40);
     font-size: 12px;
-    font-style: normal;
     font-weight: 300;
     line-height: 14px;
-    /* 116.667% */
     letter-spacing: 0.72px;
     margin-bottom: 8px;
 }
 
 .green-bronze-header {
-    font-size: 40px;
-    color: var(--darkgreen);
-    margin-bottom: 80px;
+    width: 335px;
+    flex-shrink: 0;
+    font-weight: 600;
+    color: var(--black, #141414);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -0.64px;
+    margin-bottom: 40px;
 }
 
 .green-and-bronze-list {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     display: flex;
-    gap: 24px;
+    gap: 20px;
+}
+
+.nwatches-img1 {
+    content: "";
+    height: 260px;
+    background: url(../images/green-mobile.jpg), lightgray 50% / cover no-repeat;
+    width: 335px;
+}
+
+.nwatches-img2 {
+    width: 335px;
+    height: 260px;
+    background: url(../images/bronze-mobile.jpg), lightgray 50% / cover no-repeat;
+    content: "";
+}
+
+
+@media screen and (min-width:1280px) {
+    .new-watches {
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: left;
+        padding: 80px 132px;
+    }
+  
+    .green-bronze-header {
+        width: 448px;
+        font-size: 40px;
+        line-height: 44px;
+        letter-spacing: -0.8px;
+        margin-bottom: 80px;
+    }
+    
+    .green-and-bronze-list {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    
+    .nwatches-img1 {
+        content: "";
+        width: 576px;
+        height: 422px;
+        background: url(../images/green-desktop.jpg), lightgray 50% / cover no-repeat;
+        }
+    
+    .nwatches-img2 {
+        content: "";
+        width: 576px;
+        height: 422px;
+        background: url(../images/bronze-desktop.jpg), lightgray 50% / cover no-repeat;
+        }
+}
+
+
+@media screen and (min-width:768px) and (max-width:1279px){
+
+    .new-watches {
+        width:100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        padding: 128px 20px;
+    }
+
+    .green-and-bronze-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+     }
+
+    .nwatches-img1 {
+        width: 342px;
+        height: 260px;
+        background: url(../images/green-tablet.jpg), lightgray 50% / cover no-repeat;
+        content: "";
+    }
+    
+    .nwatches-img2 {
+        width: 342px;
+        height: 260px;
+        background: url(../images/bronze-tablet.jpg), lightgray 50% / cover no-repeat;
+        content: "";
+    }
 }
