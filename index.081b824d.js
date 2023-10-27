@@ -1,0 +1,2 @@
+const e=document.querySelectorAll(".img-item"),t=document.querySelectorAll(".sale-image-small"),c=document.getElementById("large-image");e.forEach((e=>{e.addEventListener("click",(function(){const e=this.querySelector("img").src;c.classList.remove("fade-in"),c.style.opacity=0,setTimeout((()=>{c.src=e,setTimeout((()=>{c.classList.add("fade-in"),c.style.opacity=1}),100)}),300)}))})),e[0].click(),t.forEach(((e,t)=>{setTimeout((()=>{e.classList.add("fade-in")}),200*t)}));
+//# sourceMappingURL=index.081b824d.js.map
