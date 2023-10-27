@@ -1,4 +1,12 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+@font-face {
+  font-family: 'Epilogue';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.gstatic.com/s/epilogue/v3/ke8kO743IFjHK4W0BGDr9ZlbI10.woff2') format('woff2');
+}
+
 *{
     margin: 0;
     padding: 0;
