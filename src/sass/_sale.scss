@@ -243,6 +243,8 @@ body {
 
 .sale-image-large {
   position: absolute;
+  top: 14px;
+  left: 12px;
   width: 211px;
   height: 322px;
   object-fit: cover;
@@ -348,6 +350,11 @@ body {
   letter-spacing: -0.14px;
 }
 
+
+
+
+/*
+    need to apply pseudo element */
 .detail-header {
   display: flex;
   padding: 8px 0px;
