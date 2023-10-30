@@ -1,54 +1,29 @@
-<!-- Header Section -->
 <header class="header">
-    <div class="main-header containers">
-        <nav class="header-nav">
-            <!-- Logo -->
-            <div class="logo-container">
-                <img src="./images/tws-icon.svg" class="logo" alt="logo" width="19" height=19></img>
-                <span class="logo-text">thewatchspot</span>
-            </div>
-            <ul class="nav-list list">
-                <!-- navigation -->
-                <li class="nav-list-item">
-                    <a class="nav-list-item-link link" href="./">about us</a>
+    <div class="container header-mobile">
+        <a class="header-logo" href="#" data-scrollto="body" data-menuClose>
+            <img class="img-logo" src=".src/images/tws-icon.svg" alt="logo" width="14" height="14" />
+            <span class="header-logo-text">thewatchspot</span>
+        </a>
+        <nav class="header-navigation">
+            <ul class="header-list">
+                <li class="header-item">
+                    <a href="#" class="header-link underline" data-scrollto="section-about" data-menuToggle>ABOUT US</a>
                 </li>
-                <li class="nav-list-item">
-                    <a class="nav-list-item-link link" href="./">catalog</a>
+                <li class="header-item">
+                    <a href="#" class="header-link underline" data-scrollto="section-catalog"
+                        data-menuToggle>CATALOG</a>
                 </li>
-                <li class="nav-list-item">
-                    <a class="nav-list-item-link link" href="./">sale</a>
+                <li class="header-item">
+                    <a href="#" class="header-link underline" data-scrollto="section-sale" data-menuToggle>SALE</a>
                 </li>
             </ul>
         </nav>
-        <!-- contact details -->
-        <address class="address">
-            <a class="address-list-item link" href="tel:+380(68)443-94-261">+380 (68) 443-94-26</a>
-        </address>
-    
-        <!-- Mobile Menu button -->
-        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-            <img class="burger-menu" src="./images/mobile-menu-icon.jpg" width="24" height="24" alt="mobile-menu-icon">
-            <img>
+        <button type="button" class="burger" aria-label="menu burger" data-menuToggle>
+            <svg width="24" height="24">
+                <use href=".src/images/icon.svg#mobile-menu-icon" class="burger-svg"></use>
+                <use href=".src/images/icon.svg#icon-close" class="close-svg"></use>
+            </svg>
         </button>
-        <!--burger menu modal-->
-        <!-- <div class="hburger-modal is-hidden" id="mobile-menu">
-            <div class="hburger-modal-header">
-                <img src="./images/ws-logo.svg" alt="logo" width="14" height="14">
-                <p class="logo-name">thewatchspot</p>
-                <button class="menu-toggle hburger-close-btn js-close-menu" data-modal-close>
-                    <svg class="hburger-close-svg" width="24" height="24">
-                        <use href="./image/icon.svg#icon-close1"></use>
-                    </svg>
-                </button>
-            </div>
-            <div class="container hburger-menu-container">
-                <ul class="hburger-menu-list">
-                    <li class="hburger-menu-list-item"><a class="hburger-item-link" href="aboutus.html">ABOUT US</a></li>
-                    <li class="hburger-menu-list-item"><a class="hburger-item-link" href="catalog.html">CATALOG</a></li>
-                    <li class="hburger-menu-list-item"><a class="hburger-item-link" href="sale.html">SALE</a></li>
-                </ul>
-            </div>
-        </div>
-        <script src="./modal.js"></script>
-        <script src="./mobile-menu.js"></script> -->
+        <a class="header-contact-phone button" href="tel:+380684439426">+380 (68) 443-94-26</a>
+    </div>
 </header>
