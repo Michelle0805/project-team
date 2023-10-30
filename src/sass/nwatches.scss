@@ -1,135 +1,55 @@
-
 .new-watches {
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    padding: 80px 20px;
-    background-color: var(--white,#FFFF)
+    margin-bottom: 80px;
 }
 
 .new-watches-text {
-    color: rgba(20, 20, 20, 0.40);
-    font-size: 12px;
     font-weight: 300;
+    font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.72px;
+    color: rgba(20, 20, 20, 0.4);
     margin-bottom: 8px;
 }
 
-.green-bronze-header {
-    width: 335px;
-    flex-shrink: 0;
-    font-weight: 600;
-    color: var(--black, #141414);
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 40px;
-    letter-spacing: -0.64px;
-    margin-bottom: 40px;
+.new-watches-list {
+    margin-top: 40px;
 }
 
-.green-and-bronze-list {
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-    gap: 20px;
-}
-
-.nwatches-img1 {
-    content: "";
-    height: 260px;
-    background: url(../images/green-mobile.jpg), lightgray 50% / cover no-repeat;
-    width: 335px;
-}
-
-.nwatches-img2 {
-    width: 335px;
-    height: 260px;
-    background: url(../images/bronze-mobile.jpg), lightgray 50% / cover no-repeat;
-    content: "";
-}
-
-
-@media screen and (min-width:1280px) {
+@media screen and (min-width: 768px) {
     .new-watches {
-        width: 100%;
-        justify-content: space-between;
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        align-items: left;
-        padding: 80px 132px;
+        margin-bottom: 128px;
     }
-  
-    .green-bronze-header {
+
+    .new-watches-title {
         width: 448px;
-        font-size: 40px;
-        line-height: 44px;
-        letter-spacing: -0.8px;
+    }
+
+    .new-watches-list {
+        display: flex;
+        margin-bottom: 0;
+    }
+
+    .new-watches-item:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .new-watches-item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .new-watches {
         margin-bottom: 80px;
     }
-    
-    .green-and-bronze-list {
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        gap: 20px;
-    }
-    
-    .nwatches-img1 {
-        content: "";
-        width: 576px;
-        height: 422px;
-        background: url(../images/green-desktop.jpg), lightgray 50% / cover no-repeat;
-        }
-    
-    .nwatches-img2 {
-        content: "";
-        width: 576px;
-        height: 422px;
-        background: url(../images/bronze-desktop.jpg), lightgray 50% / cover no-repeat;
-        }
-}
 
-
-@media screen and (min-width:768px) and (max-width:1279px){
-
-    .new-watches {
-        width:100%;
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        justify-content: left;
-        align-items: center;
-        padding: 128px 32px;
+    .new-watches-item:not(:last-child) {
+        margin-right: 24px;
     }
 
-    .green-and-bronze-list {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        gap: 20px;
-        align-items: center;
-     }
-
-    .nwatches-img1 {
-        width: 342px;
-        height: 260px;
-        background: url(../images/green-tablet.jpg), lightgray 50% / cover no-repeat;
-        content: "";
-    }
-    
-    .nwatches-img2 {
-        width: 342px;
-        height: 260px;
-        background: url(../images/bronze-tablet.jpg), lightgray 50% / cover no-repeat;
-        content: "";
+    .new-watches-list {
+        margin-top: 80px;
     }
 }
