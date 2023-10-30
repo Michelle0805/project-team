@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.gstatic.com/s/epilogue/v3/ke8kO743IFjHK4W0BGDr9ZlbI10.woff2') format('woff2');
+  }
+
 .header {
     display: inline-flex;
     background-color: var(--black);
@@ -15,7 +22,7 @@
   }
   
   
-  .main-header {
+.main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,7 +42,7 @@
     }   
   }
   
-  .header-nav {
+.header-nav {
     align-content: center;
     justify-content: space-between;
     align-items: center;
@@ -43,7 +50,7 @@
     display: flex;
   }
   
-  .logo-container {
+.logo-container {
     color: var(--white);
     flex-direction: row;
     align-items: center;
@@ -51,153 +58,179 @@
     display: flex;
   }
   
-  .logo-text {
+.logo-text {
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
+    font-size: 12px;
+
+    @media screen and (min-width: 768px)
+    {
+        font-size: 15px;
+    }
   }
+
+.logo-icon {
+
+    width: 14px;
+    height: 14px;
+
+    @media screen and (min-width: 768px)
+    {
+        width: 19px;
+        height: 19px;
+    }
+}
   
-  .list {
-    list-style: none;
-  }
-  
-  .link {
+
+.link {
     text-decoration: none;
     color: var(--white);
-  }
-  .nav-list {
+}
+
+.nav-list {
     display: none;
-  
+
     @media screen and (min-width: 768px) {
-      text-transform: uppercase;
-      justify-content: center;
-      align-items: center;
-      gap: 40px;
-      display: inline-flex;
-      
-    }
-  }
-  
-  .address {
-    display: none;
-  
-    @media screen and (min-width: 768px) {
+        text-transform: uppercase;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        display: inline-flex;
     
-      background: var(--dark-green,#1e2827);
-      border-radius: 8px;
-      padding: 18px 35px 18px 36px;
-      font-style: normal;
-      line-height: 12px;
-      text-decoration: none;
-      display: flex;
+}
+}
+
+.nav-list-item {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
     }
-  }
-  
-  /* burger menu */
-  
-  .hburger-modal {
-    position: fixed;
-    height: 100vh;  
-    background: var(--dark-green);
-    padding-top: 34px;
+    
+}
+
+.address {
+
+display: none;
+
+@media screen and (min-width: 768px) {
+
+    background: var(--dark-green,#1e2827);
+    border-radius: 8px;
+    padding: 18px 35px 18px 36px;
+    font-style: normal;
+    line-height: 12px;
+    text-decoration: none;
     display: flex;
-    flex-direction: column;
-    row-gap: 200px;
-    top: 0;
-    right: -100%;
-    width: 100%;
-    margin: auto;
-    /* z-index: 10; */
-    background-color: var(--dark-green);
-    transition: right var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
-      
-  
-  }
-  
-  .hburger-modal.is-open{
-    right: 0;
-  }
-  
-  .hburger-modal-header {
-    display: flex;
-    position: relative;
-    gap: 4px;
-  
-  }
-  
-  .modal-container {
-  
-    display: flex;
-    flex-direction: column;
-    margin: 0 20px;
-    justify-content: space-between;
-    gap: 200px;
-  }
-  
-  
-  
-  .hburger-close-btn {
-    display: flex;
-    position: absolute;
-    align-items: flex-end;
-    justify-content: flex-end;
-    right: 0;
-    top: -5px;
-    background: transparent;
-    border: transparent;
-    stroke: var(--white);
-    height: 24px;
-    width: 24px;
-    cursor: pointer;
-    transition: color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);;
-  
-  }
-  
-  
-  .hburger-menu-list {
+}
+}
+
+/* burger menu */
+
+.hburger-modal {
+position: fixed;
+height: 100vh;  
+background: var(--dark-green);
+padding-top: 34px;
+display: flex;
+flex-direction: column;
+row-gap: 200px;
+top: 0;
+right: -100%;
+width: 100%;
+margin: auto;
+z-index: 2; 
+background-color: var(--dark-green);
+transition: right var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+.hburger-modal.is-open{
+right: 0;
+}
+
+.hburger-modal-header {
+display: flex;
+position: relative;
+gap: 4px;
+
+}
+
+.modal-container {
+
+display: flex;
+flex-direction: column;
+margin: 0 20px;
+justify-content: space-between;
+gap: 200px;
+}
+
+
+
+.hburger-close-btn {
+display: flex;
+position: absolute;
+align-items: flex-end;
+justify-content: flex-end;
+right: 0;
+top: -5px;
+background: transparent;
+border: transparent;
+stroke: var(--white);
+height: 24px;
+width: 24px;
+cursor: pointer;
+transition: color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);;
+
+}
+
+
+.hburger-menu-list {
     display: flex;
     flex-direction: column;
     gap: 14px;
     white-space: nowrap;
     align-items: center;
-  }
-  
-  .hburger-menu-list-item {
-    
+}
+
+.hburger-menu-list-item {
+
     font-size: 14px;
     font-weight: 400;
     line-height: 18px; 
     letter-spacing: -0.28px;
-    
-  
-  }
-  
-  .hburger-item-link {
-    text-decoration: none;
     color: var(--white);
-  }
-  
-  .header-container {
-  
-    @media screen and (min-width: 768px)
-    { display: none;}
-  }
-  
-  .burgermenu{
-    
-    background-color: transparent;
-    height: 14px;
-    width: 20px;
-    display: flex;
-    justify-content: flex-end;
-    margin-left: auto;
-    padding: 0;
-    cursor: pointer;
-    border: none;
-    outline: none;
-  
-    @media screen and (min-width: 768px)
-    { display: none;}
-   
-  }
+
+
+}
+
+.hburger-item-link {
+text-decoration: none;
+color: var(--white);
+}
+
+.header-container {
+
+@media screen and (min-width: 768px)
+{ display: none;}
+}
+
+.burgermenu{
+
+background-color: transparent;
+height: 14px;
+width: 20px;
+display: flex;
+justify-content: flex-end;
+margin-left: auto;
+padding: 0;
+cursor: pointer;
+border: none;
+outline: none;
+
+@media screen and (min-width: 768px)
+{ display: none;}
+
+}
+
