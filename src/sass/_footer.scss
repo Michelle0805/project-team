@@ -27,6 +27,7 @@
   /* end of general styling */
 .footer {
     background: var(--dark-green);
+    width: 100%;
     padding: 40px 20px 20px;
   }
   @media screen and (min-width: 768px) {
@@ -37,7 +38,7 @@
   @media screen and (min-width: 1280px) {
     .footer {
       padding: 104px 132px 32px;
-      max-width: 1440px;
+      // max-width: 1440px;
     }
   }
   /* first block */

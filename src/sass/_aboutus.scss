@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Epilogue';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.gstatic.com/s/epilogue/v3/ke8kO743IFjHK4W0BGDr9ZlbI10.woff2') format('woff2');
+}
+
 .aboutus {
     padding-top: 40px;
   
@@ -90,7 +97,7 @@
     @media screen and (min-width: 1280px)
     {
   
-      padding: 40px 132px 0 390px;
+      padding: 40px 132px 0px;
       
     }
   }
