@@ -1,0 +1,2 @@
+!function(){var e=document.querySelectorAll("[data-menuToggle]"),n=document.querySelectorAll("[data-menuClose]"),o=document.querySelector(".burger"),t=document.querySelector(".header-navigation");e.forEach((function(e){e.addEventListener("click",(function(){o.classList.toggle("is-open"),t.classList.toggle("is-open")}))})),n.forEach((function(e){e.addEventListener("click",(function(){o.classList.remove("is-open"),t.classList.remove("is-open")}))}))}();
+//# sourceMappingURL=index.162cc008.js.map
