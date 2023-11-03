@@ -139,6 +139,7 @@
 
     .burger .burger-svg {
         display: block;
+        background-color: var(--black);
     }
 
     .burger .close-svg {
@@ -160,7 +161,7 @@
         right: 20px;
         top: 50%;
         transform: translate(0%, -50%);
-        z-index: 3;
+        z-index: 20;
         background-color: transparent;
         border: none;
         fill: var(--white);
