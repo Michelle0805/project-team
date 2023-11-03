@@ -18,21 +18,27 @@
     --dark-green: #1E2827;
     --black:#141414;
     --white: #FFF;
+    --cubic:cubic-bezier(0.4, 0, 0.2, 1);
   }
+
   ul {
     list-style-type: none;
   }
+
   a {
     text-decoration: none;
   }
+
   body {
     font-family: "Epilogue", sans-serif;
     width: 100%;
     min-height: 100vh;
   }
+
   figure{
     margin: 0px;
   }
+  
   img {
     display: block;
     width: 100%;
