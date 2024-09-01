@@ -1,21 +1,21 @@
 {
-  "name": "the-watch-spot",
+  "name": "project-team",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Michelle0805.github.io/the-watch-spot",
+  "homepage": "https://Michelle0805.github.io/project-team",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /the-watch-spot/"
+    "build": "parcel build src/*.html --public-url /project-team/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Michelle0805/the-watch-spot.git"
+    "url": "git+https://github.com/Michelle0805/project-team.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Michelle0805/the-watch-spot/issues"
+    "url": "https://github.com/Michelle0805/project-team/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
